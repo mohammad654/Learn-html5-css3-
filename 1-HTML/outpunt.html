@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Outpunt</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Caluclate Your Age In Days</h1>
+
+<form id="for"  oninput="result.value = parseInt(age.value)* parseInt(days.value)+' Days ' ">
+
+    <input  type="text" name="age">
+    <input type="hidden" name="days" value="365" >
+    <output name="result"></output>
+
+<br>
+
+<p>Today's Audio</p>
+<audio controls autoplay loop muted preload="none" src="012.mp3">
+</audio>
+
+<p>This IS HTLM5 Video</p>
+<video poster="frog-881654_1920.jpg" controls height="300" width="350" src="">
+<track src="">
+</video>
+<br>
+<input type="color">
+<input type="submit" value="Send">
+<br>
+<input type="range" name="Choose" step="25" min="0" max="100" value="3"><br>
+
+<br>
+<hr>
+
+Number <input type="number" max="50" min="10" step="5" >
+
+Email <input type="email" name="email" autocomplete="OFF">
+
+Search :<input type="search" name="search" autofocus="on">
+
+Link : <input type="url" name="link" pattern="[A-L]{6}">
+Send :<input type="submit" value="Send">
+
+<hr><br>
+<label>Time :</label>
+<input type="time" name="time">
+<br>
+<label>DateTime :</label>
+<input type="datetime-local" name="datetime">
+    <br>
+<label>Week :</label>
+<input type="week" name="week">
+    <br>
+<label>Month :</label>
+<input type="month" name="month">
+</form>
+<label>Disabled :</label>
+<input type="text" disabled >
+<input type="submit">
+<label>Required :</label>
+<input type="text" required VALUE="required" >
+<input type="submit">
+<label>New  Window :</label>
+<input type="submit" required formaction="other" formmethod="post" value="other" >
+Link : <input type="url" name="link" placeholder="Link">
+<input type="submit" formnovalidate formtarget="_blank" value="Onther" >
+<hr><br>
+<label>Choose File :</label>
+<input type="file" required  multiple >
+<input type="submit"  >
+<hr><br>
+<label>Number :</label>
+<input type="number" placeholder="Number" value="read only" readonly>
+<input type="submit"  >
+
+
+<!--  formnovalidate: maakt het niet uit
+    multiple : meer dan  een
+    -->
+</body>
+</html>
